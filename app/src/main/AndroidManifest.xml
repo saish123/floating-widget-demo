@@ -27,7 +27,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="user"
-            android:theme="@style/DialogTheme"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"
             />
     </application>
 
