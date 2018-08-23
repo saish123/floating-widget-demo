@@ -71,6 +71,7 @@ public class FloatingViewService extends Service {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getApplicationContext().startActivity(getPopupIntent(getApplicationContext()));
                 Toast.makeText(FloatingViewService.this, "Playing the song.", Toast.LENGTH_LONG).show();
             }
         });
@@ -80,6 +81,7 @@ public class FloatingViewService extends Service {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getApplicationContext().startActivity(getPopupIntent(getApplicationContext()));
                 Toast.makeText(FloatingViewService.this, "Playing next song.", Toast.LENGTH_LONG).show();
             }
         });
